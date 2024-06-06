@@ -25,6 +25,10 @@ const About = () => {
                 and web applications. Check out this portfolio to learn more
                 about me!
               </p>
+              <p>
+              I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.
+              </p>
+              <button className="btn_about">Contact</button>
             </div>
             <div className="skills">
               <h2>My Skills</h2>

@@ -1,5 +1,6 @@
 import React from "react";
 import About from "../../components/about/About";
+import Project from "../../components/project/Project";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       </div>
 
       <About/>
+      <Project/>
     </>
   );
 };
