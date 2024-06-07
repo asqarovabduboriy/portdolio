@@ -103,16 +103,64 @@
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
+    font-weight: 600;
+    border: 1px solid rgb(42, 42, 42);
 }
 
 .btn_about:hover{
     background-color: white;
     color: rgb(42, 42, 42);
     border: 1px solid rgb(42, 42, 42);
-    transition: 0.5s;
 }
 
 .btn_about:active{
     transform: scale(0.95);
     transition: 0.5s;
 }
+
+@media (max-width: 840px) {
+    .project_one_flex{
+        flex-wrap: wrap;
+    }
+
+    .project_one_text{
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .flex_about{
+        display: grid;
+        text-align: center;
+    }
+
+    .about_me{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .about_me h2{
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 10px;
+    }
+
+    .skill_div{
+        justify-content: center;
+    }
+
+    .skills h2{
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .about_me p{
+      font-size: 16px;
+      line-height: 25px;
+      width: 100%;
+    }
+}
+  
+
+

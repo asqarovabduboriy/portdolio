@@ -1,6 +1,7 @@
 import React from "react";
 import About from "../../components/about/About";
 import Project from "../../components/project/Project";
+import Contact from "../../components/contact/Contact";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
 
       <About/>
       <Project/>
+      <Contact/>
     </>
   );
 };

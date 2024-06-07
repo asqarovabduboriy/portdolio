@@ -1,7 +1,6 @@
 import React from "react";
 import "./Project.css";
-import img from "../../assets/imgs/image.png";
-import img2 from "../../assets/imgs/image copy.png";
+import img from "../../assets/imgs/1.png";
 import logo from '../../assets/imgs/logo.svg'
 import { Link } from "react-router-dom";
 const Project = () => {
@@ -18,9 +17,6 @@ const Project = () => {
             <div className="project_one_flex">
               <div className="project_one_img">
                 <img src={img} alt="" />
-                <div className="project_one_img_absalute">
-                  <img src={img2} alt="" />
-                </div>
               </div>
               <div className="project_one_text">
                     <img src={logo} alt="" /> 

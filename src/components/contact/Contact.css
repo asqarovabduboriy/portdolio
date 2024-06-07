@@ -1,0 +1,108 @@
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 4px;
+    padding: 30px;
+    width: 70%;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+}
+
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.inputBox label{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(39, 38, 38);
+}
+
+.inputBox input{
+    padding: 20px;
+    outline: none;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    width:100%;
+    margin-top:10px;
+    font-size: 18px;
+    font-family:sans-serif;
+    background-color:rgba(128, 128, 128, 0.1);
+}
+
+.inputBox textarea{
+    padding: 10px;
+    outline: none;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    width:100%;
+    margin-top:10px;
+    font-size: 18px;
+    font-family:sans-serif;
+    height: 100px;
+    resize: none;
+    background-color:rgba(128, 128, 128, 0.1);
+
+}
+
+.inputBox button{
+    padding: 10px 50px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(39, 38, 38);
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family:sans-serif;
+    width:max-content;
+}
+
+.inputBox button:hover{
+    background-color: white;
+    color: rgb(39, 38, 38);
+    border: 1px solid rgb(39, 38, 38);
+    transition: 0.3s;
+    transform:translateY(-5px);
+}
+
+.text_Contact{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 60px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+    font-family:  sans-serif;
+}
+
+.text_p{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: black;
+    line-height: 35px;
+    letter-spacing: 1px;
+    font-family:  sans-serif;
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.wrapper_form{
+display: flex;
+justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+    form{
+        width: 100%;
+    }
+}
