@@ -1,13 +1,35 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./About.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
-  let skils = ['html',"css",'sass','js','react.js','git','bootstrap','tailwind','typescript','netx.js']
-  let skills = skils.map((skill,i) => <div className="skill_div" key={i}>{skill}</div>)
+  let skils = [
+    "html",
+    "css",
+    "sass",
+    "js",
+    "react.js",
+    "git",
+    "bootstrap",
+    "tailwind",
+    "typescript",
+    "netx.js",
+  ];
+  let skills = skils.map((skill, i) => (
+    <div className="skill_div" key={i}>
+      {skill}
+    </div>
+  ));
+
+  useEffect(() => {
+    Aos.init({ duration: 1000, once: true });
+  }, []);
+
   return (
     <>
       <section id="about">
-        <div className="container">
+        <div className="container" data-aos="fade-up">
           <div className="text_about">
             <h1>About Me</h1>
             <div className="underline"></div>
@@ -26,15 +48,15 @@ const About = () => {
                 about me!
               </p>
               <p>
-              I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.
+                I'm open to Job opportunities where I can contribute, learn and
+                grow. If you have a good opportunity that matches my skills and
+                experience then don't hesitate to contact me.
               </p>
               <button className="btn_about">Contact</button>
             </div>
             <div className="skills">
               <h2>My Skills</h2>
-               <div className="skkils_container">
-                 {skills}
-               </div>
+              <div className="skkils_container">{skills}</div>
             </div>
           </div>
         </div>

@@ -9,7 +9,9 @@ const Navbar = () => {
       <header>
         <div className="container flex">
           <div className="logo">
+            <NavLink to="/">
             <img src={logo} alt="" />
+            </NavLink>
           </div>
           <nav>
             <ul>
