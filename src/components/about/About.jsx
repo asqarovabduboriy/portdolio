@@ -3,7 +3,9 @@ import "./About.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
+
 const About = () => {
+
   let skils = [
     "html",
     "css",
@@ -52,7 +54,7 @@ const About = () => {
                 grow. If you have a good opportunity that matches my skills and
                 experience then don't hesitate to contact me.
               </p>
-              <button className="btn_about">Contact</button>
+              <button className="btn_about"><a href="#contact"> Contact  </a></button>
             </div>
             <div className="skills">
               <h2>My Skills</h2>
